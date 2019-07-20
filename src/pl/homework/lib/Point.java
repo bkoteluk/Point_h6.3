@@ -48,24 +48,24 @@ public class Point {
     }
 
     public String calculateQuater(boolean romanNumber) {
-        String rNumber;
+        String result;
         int  quater = calculateQuater();
         switch (quater) {
             case 1 :
-                rNumber = "I ćwiartce";
+                result = romanNumber ? "I" : "pierwszej";
                 break;
             case 2 :
-                rNumber = "II ćwiartce";
+                result = romanNumber ? "II" : "drugiej";
                 break;
             case 3 :
-                rNumber = "III ćwiartce";
+                result = romanNumber ? "III" : "trzeciej";
                 break;
             case 4 :
-                rNumber = "IV ćwiartce";
+                result = romanNumber ? "IV" : "czwartej";
                 break;
             default:
-                rNumber = " osi ";
+                result = " osi ";
         }
-        return rNumber;
+        return result + " ćwiartce ";
     }
 }
