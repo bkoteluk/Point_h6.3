@@ -8,6 +8,6 @@ public class PointTest {
         PointTools pTools = new PointTools();
         Point point = pTools.setPoint();
         System.out.println("Punkt " + point.toString() + " leży w "
-                + pTools.romanNumber(point.calculateQuater()) + " układu współrzędnych" );
+                + point.calculateQuater(true) + " układu współrzędnych" );
     }
 }

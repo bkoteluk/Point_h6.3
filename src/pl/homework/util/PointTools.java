@@ -1,12 +1,15 @@
 package pl.homework.util;
 
 import pl.homework.lib.Point;
+
+import java.util.Locale;
 import java.util.Scanner;
 
 public class PointTools {
 
     public Point setPoint() {
         Scanner sc = new Scanner(System.in);
+        sc.useLocale(Locale.US);
         Point point = new Point();
 
         System.out.print("Podaj X ");
@@ -16,30 +19,7 @@ public class PointTools {
         System.out.println("Podaj Y ");
         point.setY(sc.nextDouble());
         sc.nextLine();
+        sc.close();
         return point;
-    }
-
-
-
-    public String romanNumber(int number) {
-        String rNumber;
-        switch (number) {
-            case 1 :
-                rNumber = "I ćwiartce";
-                break;
-            case 2 :
-                rNumber = "II ćwiartce";
-                break;
-            case 3 :
-                rNumber = "III ćwiartce";
-                break;
-            case 4 :
-                rNumber = "IV ćwiartce";
-                break;
-                default:
-                    rNumber = " osi ";
-
-        }
-        return rNumber;
     }
 }

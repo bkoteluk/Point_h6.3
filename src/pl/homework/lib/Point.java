@@ -46,4 +46,26 @@ public class Point {
             quater = 0;
         return quater;
     }
+
+    public String calculateQuater(boolean romanNumber) {
+        String rNumber;
+        int  quater = calculateQuater();
+        switch (quater) {
+            case 1 :
+                rNumber = "I ćwiartce";
+                break;
+            case 2 :
+                rNumber = "II ćwiartce";
+                break;
+            case 3 :
+                rNumber = "III ćwiartce";
+                break;
+            case 4 :
+                rNumber = "IV ćwiartce";
+                break;
+            default:
+                rNumber = " osi ";
+        }
+        return rNumber;
+    }
 }
